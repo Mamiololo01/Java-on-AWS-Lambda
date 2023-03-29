@@ -1,0 +1,67 @@
+The Java programming language has adapted to a changing technology landscape for more than 25 years. It plays an essential role building sustainable 
+software architectures and applications. The combination of efficiency and portability encourages businesses to build their applications using Java.
+
+The introduction of AWS Lambda  has changed the desired characteristics of programming languages. Each Lambda execution environment only processes a 
+single invocation at a time, the lifetime of a function is short, and resources are constrained. In this model, the start-up time of an application and the 
+memory footprint is critical.
+
+The Java ecosystem is adapting and introduced several new projects to foster innovation. Project Leyden  will address startup time, memory footprint and 
+peak performance by introducing a concept of static images to the Java Platform, and to the JDK. The changes to the release cycle mean that innovation 
+will be delivered faster. Open source projects like GraalVM  are already able to create static images using their native-image  tool.
+
+Learning Objectives
+In this workshop you will learn how to build cloud-native Java applications, best practices and performance optimizations techniques and how to migrate 
+your existing Java application to AWS Lambda. The workshop is structured in the following independent modules.
+
+Modules
+From Serverful to Serverless Java with AWS Lambda (2 hours)
+
+In this module you will learn how to bring your traditional Java Spring application to AWS Lambda with minimal effort and iteratively apply optimizations 
+to get the best out of your Serverless Java experience. You will get an overview of best practices, performance trade-offs and the design considerations for 
+each step to be able to make well-informed decisions when bringing enterprise Java applications to AWS Lambda.
+
+Accelerate Serverless Java with GraalVM (2 hours)
+
+In the first part of this module you will get an overview of the best practices and concepts involved when building a cloud-native Serverless Java application 
+on AWS Lambda. In the second part, we’ll introduce GraalVM native images and modify the existing application to gain up to 80% performance improvement 
+during cold-starts.
+
+Starting up faster with AWS Lambda SnapStart (2 hours)
+
+At re:Invent 2022, AWS announced Lambda SnapStart for Java functions. This feature enables builders to achieve up to 10x faster function startup performance 
+for Java functions, at no additional cost, and typically with minimal or no code changes.
+
+In this module you will learn how SnapStart addresses Java function performance. You will learn how to enable SnapStart with infrastructure as code, how to 
+customize your snapshot behavior with runtime hooks and identify potential refactoring areas with automated tooling. Lastly, you will apply additional best 
+practices for performance tuning and snapshot creation. After this module you will be able to make well-informed decisions when using SnapStart for your 
+Java based AWS Lambda functions.
+
+Target Audience
+Developers, Architects, DevOps, SysOps, Testers. (Anyone working with Java applications who is interested in using AWS Lambda)
+
+Experience Required
+Level: 300 (Advanced)
+
+In the workshop you will be editing and changing Java source code. It would be helpful to be familiar with the Java programming language. If you are not, 
+that's ok, please follow the instructions carefully.
+
+You will also need a basic understanding of AWS Lambda.
+
+Cost
+The majority of the workshop uses serverless services which you only pay for when you use them. Following the steps in the workshop will result in minimal cost.
+
+The workshop uses an Amazon RDS PostgreSQL database, it's cost in the eu-west-1 region is: 1 instance(s) x 0.078 USD hourly x (100 / 100 Utilized/Month) x 
+730 hours in a month = 56.9400 USD Amazon RDS PostgreSQL instances cost (monthly): 56.94 USD
+
+If you choose to use AWS Cloud9 as a development environment it will be charged at the EC2 instance price .
+
+Supported regions
+If you run the workshop on your own, you can choose any AWS region. However, if you want to use AWS Cloud9 as a development environment, 
+you should check the AWS Regional services list  to see if it's available in the desired region.
+
+At an AWS-managed event you can just follow the instructions of your facilitator who will preselect a region for you.
+
+Clean Up
+At the end of each module there are instructions on how to remove all the AWS resources used. You don't need to have completed the module to do this, 
+you can do it at any time.
+
